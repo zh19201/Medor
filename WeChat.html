@@ -1,0 +1,434 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>微信餐厅</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="dist/WeChat.css">
+    <link rel="stylesheet" type="text/css" href="dist/commons.css">
+    <link rel="stylesheet" type="text/css" href="dist/s.css">
+    <link rel="stylesheet" type="text/css" href="dist/menu.css">
+    <link rel="stylesheet" href="dist/Gl.css">
+    <link rel="stylesheet" href="dist/s.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui-1.12.1/jquery-ui.min.css">
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+</head>
+<body>
+<!--公共样式头部-->
+<div class="GourAllBox">
+    <div class="GourPart">
+        <div class="G_top">
+            <a href="javascript:;" ><span class="G_Left"></span></a>
+            <div class="G_center">
+                <ul id="menu">
+                    <li class="active">
+                        <a href="javascript:;">
+                            <span class="activetitle activetitles">
+                                <i class="inactive "></i>
+                                <em class="G_title">餐桌</em>
+                            </span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="javascript:;">
+                            <span class="activetitle">
+                                <i class="inactive Nextinactive"></i>
+                                <em class="G_title">点餐</em>
+                            </span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="javascript:;">
+                            <span class="activetitle">
+                                <i class="inactive Nextinactive"></i>
+                                <em class="G_title">结账</em>
+                            </span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="javascript:;">
+                            <span class="activetitle">
+                                <i class="inactive Nextinactive"></i>
+                                <em class="G_title">营收</em>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="menu_icon">
+                    <i class="icon_1"></i>
+                    <i class="icon_2"></i>
+                    <i class="icon_3"></i>
+                    <i class="icon_4"></i>
+                </ul>
+            </div>
+            <a href="javascript:;" ><span class="G_Right"></span></a>
+        </div>
+    </div>
+</div>
+<!--右边弹出框-->
+<ul class="G_RightBox">
+    <li class="G_RightList"><a href="javascript:;">会员充值</a></li>
+    <li class="G_RightList"><a href="javascript:;">微信餐厅</a></li>
+    <li class="G_RightList"><a href="javascript:;">系统设置</a></li>
+    <li class="G_RightList"><a href="javascript:;">刷新系统</a></li>
+    <li class="G_RightList"><a href="signin.html">退出系统</a></li>
+    <li class="G_RightList G_RightListBut">
+        <a class="G_RightNumber">18893819201</a>
+        <p class="G_RightData">有效期:2018-03-20</p>
+    </li>
+
+</ul>
+
+
+<script src="js/commons.js"></script>
+
+
+
+<!--合成-->
+<div class="w_weChatBox">
+<div class="w_weChatBox-L">
+<a href="#" class="returnHome">
+  <i class="minReturnBox">
+  <img src="img/returnHome.jpg" class="w_returnHomeBtn">
+      <span class="w_eatingSetBox">
+           <span class="w_eatingSet">餐馆设置</span>
+           <span class="w_returnSetHome">返回设置首页</span>
+      </span>
+  </i>
+</a>
+   <div class="w_weChatListBox">
+
+  <a href="#" class="w_weChatList">会员设置</a>
+  <a href="#" class="w_weChatList">菜单设置</a>
+  <a href="#" class="w_weChatList">折扣设置</a>
+  <a href="#" class="w_weChatList">餐桌设置</a>
+  <a href="#" class="w_weChatList">支付设置</a>
+  <a href="#" class="w_weChatList">员工管理</a>
+  <a href="#" class="w_weChatList">打印设置</a>
+  <a href="#" class="w_weChatList w_active">餐馆设置</a>
+
+   </div>
+</div>
+<div class="w_weChatBox-R">
+        <div class="w_weChatBoxTab">
+<div class="w_weChatBoxTabTop">
+<a href="#" class="w_weChatBoxTabTopList ">基本信息</a>
+<a href="#" class="w_weChatBoxTabTopList">POS设置</a>
+<a href="#" class="w_weChatBoxTabTopList active responseOne">微信设置</a>
+<a href="#" class="w_weChatBoxTabTopList responseOne" >高级设置</a>
+</div>
+
+<div class="w_weChatBoxTabBox">
+<div class="w_weChatBoxTabSele m_w_weChatBoxTabSele">
+      <!--微信主要内容-->
+<form name="w_detailsBox" id="m_detailsBox">
+<p class="w_detailsBoxList">  AppID(应用ID)      <input type="text" name="appId" class="m_meChat"/></p>
+<p class="w_detailsBoxList">  AppSecret(应用秘钥)<input type="password" name="AppSecret" class="m_meChatTwo"/></p>
+<p class="w_detailsBoxList">  Token(令牌)        <input type="text" name="Token" class="m_meChatThr"/></p>
+<p class="w_detailsBoxList">  微信支付商户号     <input type="text" name="w_zf" class="m_meChatFor"/></p>
+<p class="w_detailsBoxList">  微信支付秘钥       <input type="text" name="zfKey" class="m_meChatFiv"/></p>
+<p class="w_detailsBoxList">  微信支付证书       <a href="#" class="file">上传<input type="file" name="file" value="上传"></a></p>
+<p class="w_detailsBoxList w_detailsBoxList-1">  接收微信订单       <b class="btnNiuBox"><i class="btnNiu "></i></b></p>
+<p class="w_detailsBoxList w_detailsBoxList-2">  对账单打印二维码    <b class="btnNiuBox-1"><i class="btnNiu-1 "></i></b></p>
+<p class="w_detailsBoxList"> 其他功能 <input type="submit" name="loggingManager" value="管理员登陆" id="m_loggingManager"/><input type="submit" name="findNumber" value="重置服务号码功能"></p>
+<p class="w_detailsBoxList"><input type="submit" value="保存" name="w_keepData"></p>
+</form>
+</div>
+
+<div class="w_weChatBoxTabBox-1 m_weChatBoxTabBox-1" >
+<!--基本信息-->
+<div class="uploadingImgBox">
+   <span class="itemPhoto"></span>
+   <a href="#" class="upLoadingImg">上传<input type="file" name="file" value="上传" class="upLoadingFile"></a>
+   <span class="hint">建议上传分辨率不超过500*500的正方形图片喔</span>
+</div>
+<!--填写餐馆信息-->
+<form name="houseBox">
+<div class="writeMessage">
+  <label class="control-lable">餐馆名称</label><input type="text" name="myHouse"  value="我的餐厅" class="m_myHouse"/>
+</div>
+ <div class="writeMessage">
+     <label class="control-lable">联系电话</label><input type="password" name="myHouse" class="m_myHouse"/>
+ </div>
+ <!--餐馆地址-->
+ <div class="houseAddressBox">
+     <label class="control-lable">餐馆地址</label><textarea class="writeAddress m_writeAddress" ></textarea>
+  </div>
+ <!--餐馆介绍-->
+ <div class="introduceBox">
+     <label class="control-lable">餐馆介绍</label><textarea class="writeIntroduce m_writeIntroduce"></textarea>
+ </div>
+
+ <!--保存按钮-->
+  <div class="w_keepBtnBox m_keepBtnBox">
+      <input type="submit" value="保存" class="w_keepBtn m_keepBtn"></div>
+</form>
+    </div>
+<!--pos设置-->
+    <div class="w_weChatBoxTabBox-1 m_weChatBoxTabBox-1">
+<form name="w_pos">
+    <label class="control-lable">取整方式</label>
+ <div class="radioBox" id="m_radioBox">
+     <span class="firsrRow">
+         <b class="radioBtn">
+             <i class="w_minSelectBtn">
+                  <input type="radio" name="btnSelect">
+             </i>
+         </b><b class="getInt">四舍五入</b>
+     </span>
+     <span class="firsrRow">
+         <b class="radioBtn">
+
+                  <input type="radio" name="btnSelect">
+             </i>
+         </b><b class="getInt">无条件舍去</b>
+     </span>
+     <span class="firsrRow">
+         <b class="radioBtn">
+
+                  <input type="radio" name="btnSelect">
+             </i>
+         </b><b class="getInt">无条件进位</b>
+     </span>
+     <span class="firsrRow">
+         <b class="radioBtn">
+
+                  <input type="radio" name="btnSelect">
+             </i>
+         </b><b class="getInt">保留两位</b>
+     </span>
+ </div>
+    <!--添加设置-->
+    <div class="addSetList">
+     快餐设置 <b class="btnMinSeleBox"><i class="btnMinSele"></i></b>
+    </div>
+    <div class="addSetList">
+        员工营收限制 <b class="btnMinSeleBox-1"><i class="btnMinSele-1"></i></b>
+    </div>
+    <div class="addSetList">
+        下单直接付款 <b class="btnMinSeleBox-2"><i class="btnMinSele-2"></i></b>
+    </div>
+
+    <div class="addSetList m_addSetList">
+      时区         <select name="choose" id="choose" class="w_choose">
+            <option value="CST. China Standtard Time 8:0.0" selected="selected">CST. China Standtard Time 8:0.0</option>
+            <option value="CST. China Standtard Time 9:0.0">CST. China Standtard Time 9:0.0</option>
+            <option value="CST. China Standtard Time 10:0.0">CST. China Standtard Time 10:0.0</option>
+            <option value="CST. China Standtard Time 11:0.0">CST. China Standtard Time 11:0.0</option>
+            <option value="CST. China Standtard Time 12:0.0">CST. China Standtard Time 12:0.0</option>
+        </select>
+    </div>
+    <div class="addSetList m_addSetList">
+        货币      <select name="choose" class="w_money w_choose">
+            <option value="中国 （¥）" selected="selected">中国 （¥）</option>
+            <option value="丹麦 （kr）">丹麦 （kr）</option>
+            <option value="乌克兰（r p H）">乌克兰（r p H）</option>
+            <option value="乌拉圭（UN$）">乌拉圭（UN$）</option>
+            <option value="冰岛（kr）">冰岛（kr）</option>
+        </select>
+    </div>
+    <div class="addSetList m_addSetList">
+        服务费  <input type="number" class="form-control fee w_choose" name="fee" placeholder="" min="0" max="100" value="0">
+    </div>
+    <div class="addSetList remark">
+        账单备注 <input type="text" name="remark" id="m_remark"><button class="remarkBtn">添加备注</button>
+    </div>
+    <div class="w_keepBtnBox">
+      <input type="submit" class="w_keepBtn" value="保存"/>
+         </div>
+</form>
+        <!--取整方式-->
+         <div class="intWayBox"></div>
+    </div>
+    <div class="w_weChatBoxTabBox-1  w_weChatActive"></div>
+
+    <!--高级设置-->
+    <div class="w_weChatBoxTabBox-1 ">
+        <div class="w_APIlist">
+             API码<input type="text" name="writeApi"/>
+        </div>
+
+        <div class="w_APIlist  w_APIlist-1">
+             设备号码<input type="text" name="writeApi"/>
+        </div>
+        <!--清理缓存-->
+        <button class="clearData">清理系统缓存</button>
+
+        <!--//保存-->
+        <button class="keepData">清理系统缓存</button>
+    </div>
+
+</div>
+</div>
+<!--侧边栏弹出框-->
+<div class="w_memberSet w_memActive">会员设置</div>
+<div class="w_memberSet">
+   <!-- <div class="content"> -->
+        <div class="contentR">
+            <ul class="ct foodList">    
+                <div class="Title foodListTitle">
+                    <button class="tianjia"> 
+                        <img src="img/backstage/canzhuo/add.png" alt="">
+                        <span>添加餐品分类</span>
+                    </button>
+                </div>
+                <div class="better"></div>
+                <li class="footListName activeXiugai">
+                    <h4>饮料(<span>2</span>)</h4>
+                    <button class="xiugai activeXiugai">修改</button>
+                </li>
+                <li class="footListName">
+                    <h4>甜品(<span>2</span>)</h4>
+                    <button class="xiugai">修改</button>
+                </li>
+            </ul>
+            <div class="ct foodDetail">
+                <div class="Title foodDetailTitle">
+                    <button> 
+                        <img src="img/backstage/canzhuo/add.png" alt="">
+                        <span>添加餐品</span>
+                    </button>
+                </div>
+                <div class="better"></div>
+                <div class="footListName">
+                    <ul class="name name1 activeName">
+                        <li><h1>冰封</h1><h2>￥ <span>2.00</span> 元</h2></li>
+                        <li><h1>可乐</h1><h2>￥ <span>3.00</span> 元</h2></li>
+                        <li><h1>果啤</h1><h2>￥ <span>1.50</span> 元</h2></li>
+                    </ul>
+                    <ul class="name name2">
+                        <li><h1>香草冰激凌</h1><h2>￥ <span>3.00</span> 元</h2></li>
+                        <li><h1>印度糊糊</h1><h2>￥ <span>5.00</span> 元</h2></li>
+                    </ul>
+                </div>
+                    
+                </div>
+           <!--  </div> -->
+      <!--   </div>
+    </div> -->
+
+
+    <!-- add -->
+    <div class="mask">
+        <div class="add">
+            <div class="addTitle">
+                <span class="xinjian">新建餐桌</span>
+                <a href="javascript:;" class="close">
+                    <img src="img/backstage/canzhuo/close.png" alt="">
+                </a>
+            </div>
+            <div class="addList">
+                <a href="javascript:;">基本设定</a>
+            </div>
+            <form class="addContent">
+                <div class="ctList ctList1">
+                    <label class="label1">餐品分类</label>
+                    <input type="text" class="name1" required>
+                </div>
+                <div class="ctList ctList2">
+                    <label class="label1">分类介绍</label>
+                    <input type="text" class="type1">
+                </div> 
+            </form>
+            <div class="addFoot">
+                <button class="baocun">保存</button>
+            </div>
+        </div>  
+    </div> 
+
+</div>
+<div class="w_memberSet">折扣设置</div>
+<div class="w_memberSet">
+      <div class="content">
+        <div class="contentR">
+            <ul class="ct foodList">    
+                <div class="Title foodListTitle">
+                    <button class="tianjia"> 
+                        <img src="img/backstage/canzhuo/add.png" alt="">
+                        <span>添加餐品分类</span>
+                    </button>
+                </div>
+                <div class="better"></div>
+                <li class="footListName activeXiugai">
+                    <h4>饮料(<span>2</span>)</h4>
+                    <button class="xiugai activeXiugai">修改</button>
+                </li>
+                <li class="footListName">
+                    <h4>甜品(<span>2</span>)</h4>
+                    <button class="xiugai">修改</button>
+                </li>
+            </ul>
+            <div class="ct foodDetail">
+                <div class="Title foodDetailTitle">
+                    <button> 
+                        <img src="img/backstage/canzhuo/add.png" alt="">
+                        <span>添加餐品</span>
+                    </button>
+                </div>
+                <div class="better"></div>
+                <div class="footListName">
+                    <ul class="name name1 activeName">
+                        <li><h1>冰封</h1><h2>￥ <span>2.00</span> 元</h2></li>
+                        <li><h1>可乐</h1><h2>￥ <span>3.00</span> 元</h2></li>
+                        <li><h1>果啤</h1><h2>￥ <span>1.50</span> 元</h2></li>
+                    </ul>
+                    <ul class="name name2">
+                        <li><h1>香草冰激凌</h1><h2>￥ <span>3.00</span> 元</h2></li>
+                        <li><h1>印度糊糊</h1><h2>￥ <span>5.00</span> 元</h2></li>
+                    </ul>
+                </div>
+                    
+                </div>
+            </div>
+     
+
+
+    <!-- add -->
+    <div class="mask">
+        <div class="add">
+            <div class="addTitle">
+                <span class="xinjian">新建餐桌</span>
+                <a href="javascript:;" class="close">
+                    <img src="img/backstage/canzhuo/close.png" alt="">
+                </a>
+            </div>
+            <div class="addList">
+                <a href="javascript:;">基本设定</a>
+            </div>
+            <form class="addContent">
+                <div class="ctList ctList1">
+                    <label class="label1">餐品分类</label>
+                    <input type="text" class="name1" required>
+                </div>
+                <div class="ctList ctList2">
+                    <label class="label1">分类介绍</label>
+                    <input type="text" class="type1">
+                </div> 
+            </form>
+            <div class="addFoot">
+                <button class="baocun">保存</button>
+            </div>
+        </div>  
+    </div>
+
+
+</div>
+<div class="w_memberSet">支付设置</div>
+<div class="w_memberSet">员工设置</div>
+<div class="w_memberSet">打印设置</div>
+<div class="w_memberSet">餐馆设置</div>
+
+
+</div>
+</div>
+<!--遮罩层-->
+<div class="shadowBox">
+<img src="img/loading.gif" class="shadowImg">
+</div>
+<script type="text/javascript" src="js/WeChat.js"></script>
+<script type="text/javascript" src="js/GourCar.js"></script>
+<script type="text/javascript" src="js/bash.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+
+</body>
+</html>
