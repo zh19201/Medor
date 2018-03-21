@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="dist/Gl.css">
+    <link rel="stylesheet" href="dist/s.css">
+    <link rel="stylesheet" href="dist/commons.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui-1.12.1/jquery-ui.min.css">
+    <script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>
+    <script src="jqueryui/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+
+</head>
+<body>
+<div class="GourAll">
+   <!--公共样式头部-->
+<div class="GourAllBox">
+    <div class="GourPart">
+        <div class="G_top">
+            <a href="javascript:;" ><span class="G_Left"></span></a>
+            <div class="G_center">
+                <ul id="menu">
+                    <li class="active">
+                        <a href="javascript:;">
+                            <span class="activetitle activetitles">
+                                <i class="inactive "></i>
+                                <em class="G_title">餐桌</em>
+                            </span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="javascript:;">
+                            <span class="activetitle">
+                                <i class="inactive Nextinactive"></i>
+                                <em class="G_title">点餐</em>
+                            </span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="javascript:;">
+                            <span class="activetitle">
+                                <i class="inactive Nextinactive"></i>
+                                <em class="G_title">结账</em>
+                            </span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="javascript:;">
+                            <span class="activetitle">
+                                <i class="inactive Nextinactive"></i>
+                                <em class="G_title">营收</em>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="menu_icon">
+                    <i class="icon_1"></i>
+                    <i class="icon_2"></i>
+                    <i class="icon_3"></i>
+                    <i class="icon_4"></i>
+                </ul>
+            </div>
+            <a href="javascript:;" ><span class="G_Right"></span></a>
+        </div>
+    </div>
+</div>
+<!--右边弹出框-->
+<ul class="G_RightBox">
+    <li class="G_RightList"><a href="javascript:;">会员充值</a></li>
+    <li class="G_RightList"><a href="WeChat%20.html">微信餐厅</a></li>
+    <li class="G_RightList"><a href="javascript:;">系统设置</a></li>
+    <li class="G_RightList"><a href="javascript:;">刷新系统</a></li>
+    <li class="G_RightList"><a href="javascript:;">退出系统</a></li>
+    <li class="G_RightList G_RightListBut">
+        <a class="G_RightNumber">18893819201</a>
+        <p class="G_RightData">有效期:2018-03-20</p>
+    </li>
+
+</ul>
+
+    <!-- 二级菜单 -->
+    <div class="G_bottom">
+        <div class="panel active">
+            <ul class="colourCode">
+                <li class="all filter selected vcenter single">
+                    <span class="all"></span>
+                    <div class="never-allow">全部餐桌</div>
+                    <div class="activeStyle"></div>
+                </li>
+                <li class="filter vcenter">
+                    <span class="paid mark">0</span>
+                    <div class="never-allow">已付款</div>
+                    <div class="activeStyle"></div>
+                </li>
+                <li class="filter vcenter">
+                    <span class="unpaid mark">6</span>
+                    <div class="never-allow">未付款</div>
+                    <div class="activeStyle"></div>
+                </li>
+                <li class="filter vcenter">
+                    <span class="closed mark">5</span>
+                    <div class="never-allow">(空桌)</div>
+                    <div class="activeStyle"></div>
+                </li>
+                <a href="javascript:;">
+                    <em class="left_btn"></em>
+                    <b class="right_btn"></b>
+                </a>                   
+            </ul>
+            <div class="colourCodess panlee aive">
+                <div class="tooieIconBack"><img src="GourCar/bd.png"></div>
+                <div class="tableList">
+                        <div class="aTable pitem" status="Closed">
+                            <a class="name large"  href="#one">外卖</a>
+                            <!-- <span class="status medium">(空桌)</span> -->
+                            <div class="aTable-clean"></div>
+                            <span class="bill-amount large">
+                                <span class="symbol small"></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        <div class="aTable pitem" data-id="578878" data-aid="" status="Closed">
+                            <h3 class="name large">1</h3>
+                            <span class="status medium">(空桌)</span>
+                            <div class="aTable-clean"></div>
+                            <span class="bill-amount large">
+                                <span class="symbol small"></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        <div class="aTable pitem" data-id="578878" data-aid="" status="Closed">
+                            <h3 class="name large">2</h3>
+                            <span class="status medium">(空桌)</span>
+                            <div class="aTable-clean"></div>
+                            <span class="bill-amount large">
+                                <span class="symbol small"></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        <div class="aTable pitem" data-id="578878" data-aid="" status="Closed">
+                            <h3 class="name large">3</h3>
+                            <span class="status medium">(空桌)</span>
+                            <div class="aTable-clean"></div>
+                            <span class="bill-amount large">
+                                <span class="symbol small"></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        <div class="aTable pitem" data-id="578878" data-aid="" status="Closed">
+                            <h3 class="name large">4</h3>
+                            <span class="status medium">(空桌)</span>
+                            <div class="aTable-clean"></div>
+                            <span class="bill-amount large">
+                                <span class="symbol small"></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        <div class="aTable pitem" data-id="578878" data-aid="" status="Closed">
+                            <h3 class="name large">5</h3>
+                            <span class="status medium">(空桌)</span>
+                            <div class="aTable-clean"></div>
+                            <span class="bill-amount large">
+                                <span class="symbol small"></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        <div class="aTable pitem" data-id="578878" data-aid="" status="Closed">
+                            <h3 class="name large">6</h3>
+                            <span class="status medium">(空桌)</span>
+                            <div class="aTable-clean"></div>
+                            <span class="bill-amount large">
+                                <span class="symbol small"></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        <div class="aTable pitem" data-id="578878" data-aid="" status="Closed">
+                            <h3 class="name large">7</h3>
+                            <span class="status medium">(空桌)</span>
+                            <div class="aTable-clean"></div>
+                            <span class="bill-amount large">
+                                <span class="symbol small"></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        <div class="aTable pitem" data-id="578878" data-aid="" status="Closed">
+                            <h3 class="name large">8</h3>
+                            <span class="status medium">(空桌)</span>
+                            <div class="aTable-clean"></div>
+                            <span class="bill-amount large">
+                                <span class="symbol small"></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        <div class="aTable pitem" data-id="578878" data-aid="" status="Closed">
+                            <h3 class="name large">9</h3>
+                            <span class="status medium">(空桌)</span>
+                            <div class="aTable-clean"></div>
+                            <span class="bill-amount large">
+                                <span class="symbol small"></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        
+                </div>
+            </div>
+            <div class="panlee"></div>
+            <div class="panlee"></div>
+            <div class="panlee">
+                <div class="tableList">
+                    <div class="aTable pitem" data-id="578878" data-aid="" status="Closed">
+                        <h3 class="name large">外卖</h3>
+                        <span class="status medium">(空桌)</span>
+                        <div class="aTable-clean"></div>
+                        <span class="bill-amount large">
+                            <span class="symbol small"></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div class="aTable pitem" data-id="578878" data-aid="" status="Closed">
+                        <h3 class="name large">1</h3>
+                        <span class="status medium">(空桌)</span>
+                        <div class="aTable-clean"></div>
+                        <span class="bill-amount large">
+                            <span class="symbol small"></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div class="aTable pitem" data-id="578878" data-aid="" status="Closed">
+                        <h3 class="name large">2</h3>
+                        <span class="status medium">(空桌)</span>
+                        <div class="aTable-clean"></div>
+                        <span class="bill-amount large">
+                            <span class="symbol small"></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div class="aTable pitem" data-id="578878" data-aid="" status="Closed">
+                        <h3 class="name large">3</h3>
+                        <span class="status medium">(空桌)</span>
+                        <div class="aTable-clean"></div>
+                        <span class="bill-amount large">
+                            <span class="symbol small"></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div class="aTable pitem" data-id="578878" data-aid="" status="Closed">
+                        <h3 class="name large">4</h3>
+                        <span class="status medium">(空桌)</span>
+                        <div class="aTable-clean"></div>
+                        <span class="bill-amount large">
+                            <span class="symbol small"></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div class="aTable pitem" data-id="578878" data-aid="" status="Closed">
+                        <h3 class="name large">5</h3>
+                        <span class="status medium">(空桌)</span>
+                        <div class="aTable-clean"></div>
+                        <span class="bill-amount large">
+                            <span class="symbol small"></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div class="aTable pitem" data-id="578878" data-aid="" status="Closed">
+                        <h3 class="name large">6</h3>
+                        <span class="status medium">(空桌)</span>
+                        <div class="aTable-clean"></div>
+                        <span class="bill-amount large">
+                            <span class="symbol small"></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div class="aTable pitem" data-id="578878" data-aid="" status="Closed">
+                        <h3 class="name large">7</h3>
+                        <span class="status medium">(空桌)</span>
+                        <div class="aTable-clean"></div>
+                        <span class="bill-amount large">
+                            <span class="symbol small"></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div class="aTable pitem" data-id="578878" data-aid="" status="Closed">
+                        <h3 class="name large">8</h3>
+                        <span class="status medium">(空桌)</span>
+                        <div class="aTable-clean"></div>
+                        <span class="bill-amount large">
+                            <span class="symbol small"></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div class="aTable pitem" data-id="578878" data-aid="" status="Closed">
+                        <h3 class="name large">9</h3>
+                        <span class="status medium">(空桌)</span>
+                        <div class="aTable-clean"></div>
+                        <span class="bill-amount large">
+                            <span class="symbol small"></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    
+            </div>   
+            </div>
+        </div>
+        <div class="panel">
+            <div id="order" class="state" id="one">
+                <div class="main">
+
+                    <div class="leftPanel">
+
+                        <div class="headerall">
+                            <div class="header_left">
+                                <img src="GourCar/sz.png">
+                                <span class="tableNameLabel">餐桌</span>
+                                <span class="tableName"></span>                              
+                            </div>
+                            <div class="header_right">
+                                    <img src="GourCar/table.png">
+                                <span class="tableSelectBtn">选择餐桌</span>
+                            </div>
+                        </div>
+                        <div class="header_center">
+                            <div class="tabperson">
+                                <img src="GourCar/persons1.png">
+                                <span class="tapernum">用餐人数</span>
+                                <span class="tableName"></span>   
+                            </div>
+                            <div class="tabprice btn_box">                                
+                                <a id="lessbtn" href="javascript:;">-</a>
+                                <input id="inner_number" type="text" value="1">
+                                <a id="addbtn" href="javascript:;">+</a>
+                            </div>
+                        </div>
+                        <div class="section">
+
+                            <div class="orderLeft">
+                                    <div class="orderCol">
+                                    <div class="note-print">
+                                        <div class="add-note">
+                                            <span class="add-btn">
+                                                <img src="GourCar/ass.png">&nbsp;添加备注
+                                            </span>
+                                            <div class="pay-notes">
+                                                <div class="content">
+                                                    <i class="sou"></i>
+                                                    <em class="shio"></em>
+                                                </div>
+                                                <img src="GourCar/close.png" class="deletenote">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="headerover small"> 已点餐品
+                                        <span class="billItemCount Num">&nbsp;0</span>
+                                    </div>
+                                    <ul class="orderList">
+                                       <!-- <li class="pitem billItem item "></li> -->
+                                        <!-- <li class="pitem billItem item ">
+                                            <div class="item-body">
+                                                <div class="info">
+                                                    <span class="name">可乐</span>
+                                                    <div class="options"></div>
+                                                    <span class="grey">
+                                                        <span class="symbol">￥</span>
+                                                        <span class="price">3.50</span>
+                                                        <span class="orderNumber">X</span>
+                                                        <span class="quantity Num">1</span>
+                                                     </span>
+                                                </div>
+                                                <div class="btnBox vcenter">
+                                                    <button class="btn remove"></button>
+                                                    <button  id="minus-btn" class="btn edit-quantity minus-btn v-m"></button>
+                                                   <input  id ="quantity" class="Num quantity form-control" type="text" value="1"> 
+                                                    <button id="plus-btn" class="btn edit-quantity plus-btn v-m"></button>
+                                                </div>
+                                            </div>
+                                        </li>  -->
+
+                                        <!-- <li class="pitem billItem item ">
+                                            <div class="item-body">
+                                                <div class="info">
+                                                    <span class="name">可乐</span>
+                                                    <div class="options"></div>
+                                                    <span class="grey">
+                                                        <span class="symbol">￥</span>
+                                                        <span class="price">3.50</span>
+                                                        <span class="orderNumber">X</span>
+                                                        <span class="quantity Num">1</span>
+                                                     </span>
+                                                </div>
+                                                <div class="btnBox vcenter">
+                                                    <button class="btn remove"></button>
+                                                    <button  id="minus-btn" class="btn edit-quantity minus-btn v-m"></button>
+                                                   <input  id ="quantity" class="Num quantity form-control" type="text" value="1"> 
+                                                    <button id="plus-btn" class="btn edit-quantity plus-btn v-m"></button>
+                                                </div>
+                                            </div>
+                                        </li>  -->
+                                    </ul>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="header_footer">
+                            <div class="footer_top">
+                                <span class="small amount-title">账单金额</span>
+                                <span class="symbol ">￥</span>
+                                <span class="totalPrice  toAll">0</span>
+                            </div>
+                            <div class="footer_bottom">
+                                <input class="bill_submit" type="button" value="下单">
+                                <!-- <button class="bill_submit" disabled="disabled">下单
+                                </button>  -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="rightPanel">
+
+                        <div class="orderMain">
+                            <div class="orderAmim">
+                                <div class="orderTop">
+                                    <ul id= "receves">
+                                        <li class="cell-wrapper"><span>全部</span></li>
+                                        <li><span>饮料</span></li>
+                                        <li class="showsweet"><span>甜品</span></li>
+                                        <li class="showCat">
+                                            <a class="showCategory">更多 <img src="GourCar/bu.png"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="orderBottom">
+                                    <div class="orerFirst anpanel">
+                                        <div class="complete">
+                                            <div class="cpmall">全部</div>
+                                            <div class="clist">
+                                                <ul class="culist">
+                                                    <li class="menuItem">
+                                                        <span class="itemNameSpan">可乐</span>
+                                                        <span class="menuitem-price">￥&nbsp;3.50</span>
+                                                    </li>
+                                                    <li class="menuItem">
+                                                        <span class="itemNameSpan">绿茶</span>
+                                                        <span class="menuitem-price">￥&nbsp;3.50</span>
+                                                    </li>
+                                                    <li class="menuItem">
+                                                        <span class="itemNameSpan">提拉米苏</span>
+                                                        <span class="menuitem-price">￥&nbsp;12.00</span>
+                                                    </li>
+                                                    <li class="menuItem">
+                                                        <span class="itemNameSpan">西米露</span>
+                                                        <span class="menuitem-price">￥&nbsp;12.00</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="anpanel">
+                                        <div class="complete">
+                                            <div class="cpmall">饮料</div>
+                                            <div class="clist">
+                                                <ul class="culist">
+                                                    <li class="menuItem">
+                                                        <span class="itemNameSpan">可乐</span>
+                                                        <span class="menuitem-price">￥&nbsp;3.50</span>
+                                                    </li>
+                                                    <li class="menuItem">
+                                                        <span class="itemNameSpan">绿茶</span>
+                                                        <span class="menuitem-price">￥&nbsp;3.50</span>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="anpanel">
+                                        <div class="complete">
+                                            <div class="cpmall">甜品</div>
+                                            <div class="clist">
+                                                <ul class="culist">
+                                                    <li class="menuItem">
+                                                        <span class="itemNameSpan">提拉米苏</span>
+                                                        <span class="menuitem-price">￥&nbsp;12.00</span>
+                                                    </li>
+                                                    <li class="menuItem">
+                                                        <span class="itemNameSpan">西米露</span>
+                                                        <span class="menuitem-price">￥&nbsp;12.00</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="anpanel">
+                                        <div class="complete">
+                                            <div class="clist">
+                                                <ul class="showCatList item-list">
+                                                    <li class="pitem cat" >
+                                                        <span>全部</span>
+                                                    </li>
+                                                    <li class="pitem cat">
+                                                        <span>饮料</span>
+                                                    </li>
+                                                    <li class="pitem cat">
+                                                        <span>甜品</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    </div>
+                </div> 
+
+
+                <div class="partTavels">
+                <div class="shadow"></div>
+                <div class="modal in" id="paymentNotesModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">添加备注</h4>
+                                    <button type="button" class="btn btn-success btn-close"  ></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="payment-notes">
+                                        <div class="note-list"></div>
+                                        <div class="other-note">
+                                            <textarea rows="4" class="note medium" placeholder="请输入备注信息"></textarea>
+                                        </div>
+                                        <div class="bottom-bar">
+                                            <button class="btn saveNote">保存</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+            <!-- <button class="btn btn-lg bill-submit" style="margin-top: 0px; margin-right: 15px;" disabled="disabled">
+                    <img src="GourCar/pen.png ">
+                    下单
+                </button>    -->
+        </div>
+        <div class="panel">
+
+
+            <div class="CashierContainer">
+                <!--移动端的布局-->
+                <div class="functionTabs">
+                    <span class="billView">账单详情</span>
+                    <span class="discountView">折扣&amp;支付方式</span>
+                    <span class="calculatorView selected">账单金额</span>
+                </div>
+                <!--响应式的布局-->
+                <div class="FinancialTimes">
+                    <div class="BillClerk sybdi">
+                        <div class="headerall">
+                            <div class="header_left">
+                                <img src="GourCar/sz.png">
+                                <span class="tableNameLabel">餐桌</span>
+                                <span class="tableName"></span>
+                            </div>
+                            <div class="header_right">
+                                <img src="GourCar/table.png">
+                                <span class="tableSelectBtn">切换餐桌</span>
+                            </div>
+                        </div>
+
+                        <div class="section">
+
+                            <div class="orderLeft">
+                                <div class="orderCol">
+                                    <div class="note-print">
+                                        <div class="add-note">
+                                            <span class="add-btn">
+                                                <img src="GourCar/ass.png">&nbsp;添加备注
+                                            </span>
+                                            <div class="pay-notes">
+                                                <div class="content">
+                                                    <i class="sou"></i>
+                                                    <em class="shio"></em>
+                                                </div>
+                                                <img src="GourCar/close.png" class="deletenote">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="headerover small"> 已点餐品
+                                        <span class="billItemCount Num">&nbsp;0</span>
+                                    </div>
+                                    <ul class="orderList">
+                                        <!-- <li class="pitem billItem item ">
+                                            <div class="item-body">
+                                                <div class="info">
+                                                    <span class="name">可乐</span>
+                                                    <div class="options"></div>
+                                                    <span class="grey">
+                                                        <span class="symbol">￥</span>
+                                                        <span class="price">3.50</span>
+                                                        <span class="orderNumber">X</span>
+                                                        <span class="quantity Num">1</span>
+                                                     </span>
+                                                </div>
+                                            </div>
+                                        </li> -->
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="ChangStyle">
+                        <div class="DiscountTip">
+
+                            <div class="DisTop discounts">
+
+                                <div class="add-discount">
+                                    <img src="GourCar/zhe.png" class="discount-image">
+                                    <span class="add-text">折扣或小费</span>
+                                </div>
+                                <div class="edit-discount" style="display: none;">
+                                    <div class="discount-area vcenter">
+                                        <img src="GourCar/cash1.png" class="show-discount">
+                                        <img src="GourCar/cash2.png" class="remove ">
+
+                                        <div class="clearfix"></div>
+                                        <div class="name"></div>
+                                        <div class="amount">0.00</div>
+                                    </div>
+                                    <div class="ignore-area vcenter">
+                                        <img src="GourCar/cash1.png" class="show-discount">
+                                        <img src="GourCar/cash2.png" class="remove ">
+
+                                        <div class="clearfix"></div>
+                                        <div class="name">抹零</div>
+                                        <div class="amount-container">
+                                            <span class="symbol">-</span>
+                                            <span class="currency-symbol">￥</span>
+                                            <span class="amount">0.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="tip-area vcenter">
+                                        <img src="GourCar/cash1.png" class="show-discount">
+                                        <img src="GourCar/cash2.png" class="remove ">
+
+                                        <div class="clearfix"></div>
+                                        <div class="name">小费</div>
+                                        <div class="amount-container">
+                                            <span class="currency-symbol">￥</span>
+                                            <span class="amount">0.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="DisBottom modes">
+
+                                <span class="pay-mode">支付方式</span>
+                                <ul class="list-group" id="clibtn">
+
+                                    <li class="mode  selected sstrl ssytkl" >
+                                        <div class="modeDiv">
+                                            <div class="ModerLeft">
+                                                <a href="javascript:;" class="checkedchoolers "></a>
+                                                <a href="javascript:;" class="casherse">现金</a>
+                                            </div>
+                                            <div class="ModerRight sicr">0.00</div>
+                                        </div>
+                                    </li>
+                                    <li class="mode  selected  sstrl" >
+                                        <div class="modeDiv modeDivs">
+                                            <div class="ModerLeft">
+                                                <a href="javascript:;" class="checkedchoolers "></a>
+                                                <a href="javascript:;" class="casherse">银行卡</a>
+                                            </div>
+                                            <div class="ModerRight"></div>
+                                        </div>
+                                    </li>
+
+                                    <li class="mode  selected  sstrl" id="huiyuanka" >
+                                        <div class="modeDiv modeDivs">
+                                            <div class="ModerLeft">
+                                                <a href="javascript:;" class="checkedchoolers "></a>
+                                                <a href="javascript:;" class="casherse">会员卡</a>
+                                            </div>
+                                            <div class="ModerRight"></div>
+                                        </div>
+                                    </li>
+                                    <li class="mode  selected  sstrl" id="otre">
+                                        <div class="modeDiv modeDivs">
+                                            <div class="ModerLeft">
+                                                <a href="javascript:;" class="checkedchoolers "></a>
+                                                <a href="javascript:;" class="casherse">其他</a>
+                                            </div>
+                                            <div class="ModerRight"></div>
+                                        </div>
+                                    </li>                                    
+                                </ul>
+
+                            </div>
+
+
+                            <!-- 点击会员卡时出现的 -->
+                            <div class="partTavelshuiyuanka">
+                                <div class="shadow"></div>
+                                <div class="modal in" id="paymentNotesModal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">朵颐</h4>
+                                                <button type="button" class="btn btn-success btn-close" id="btn-c"  ></button>
+                                            </div>
+                                            <div class="modal-body form">
+                                                <div class="input-group input-group-lg">
+                                                    <input type="text" class="membership-input" autofocus="true" placeholder="请输入会员卡号或联系电话进行查询">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-lg search">查询</button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <!-- 点击其他的时候出现的 -->
+
+                        <div class="partTavelothers">
+                            <div class="shadow"></div>
+                            <div class="modal in" id="paymentNotesModalothers">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">选择其他支付方式</h4>
+                                            <button type="button" class="btn btn-success btn-close" id="bpaymentNotesModalothers"  ></button>
+                                        </div>
+                                        <div class="modal-body payment-list">
+
+                                            <div class="payment wechat " data-name="WEIXIN_POS">
+                                                <span>微信支付</span>
+                                            </div>
+                                            <div class="payment creditCard " data-name="CREDIT_CARD">
+                                                <span>银行卡</span>
+                                            </div>
+                                            <div class="payment membershipCard " data-name="MEMBER_CARD">
+                                                <span>会员卡</span>
+                                            </div>
+                                            <div class="payment alipay " data-name="ALIPAY_POS">
+                                                <span>支付宝</span>
+                                            </div>
+                                            <div class="payment cash " data-name="CASH">
+                                                <span>现金</span>
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <span>提示：<a>餐厅设置</a>中可更换选定3个常用默认支付方式</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 点击完成金额的时候出现的 -->
+                        <div class="check cashier-checkout">
+                            <div class="amount-input-area">
+                                <div class="pay-module">
+                                    <button class="btn pay btn-lg disabled" disabled="disabled">完成收银</button>
+                                </div>
+                                <div class="amount-module">
+                                    <div class="shouldPay-amount">
+                                        <div class="amount-item no-highlight">
+                                            <span class="title">账单金额</span>￥
+                                            <span class="amount order-amount">3.50</span>
+                                        </div>
+                                        <div class="amount-item focus hidden">
+                                            <span class="title">小费</span>￥
+                                            <span class="amount tip-amount">0</span>
+                                        </div>
+                                        <div class="amount-item focus separate">
+                                            <span class="title">应付</span>￥
+                                            <span class="amount should-pay-amount">3.50</span>
+                                        </div>
+                                        <div class="amount-item focus">
+                                            <span class="title">现收</span>￥
+                                            <span class="amount paid-amount">0.00</span>
+                                        </div>
+                                        <div class="amount-item change focus hidden">
+                                            <span class="turn-tip"></span>
+                                            <span class="title">找零</span>￥
+                                            <span>-&nbsp;<span class="amount change-amount">-3.50</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--计算器-->
+                            <div class="calputer">
+                                <div class=" list-group">
+
+                                    <div type="number" class="number-input" ></div>
+
+                                    <span class="num-display vcenter" >0</span>
+                                    <span class="pull-right vcenter backspace"  id='reset' class='operate' title="长按可取消所有输入"></span>
+                                    <div class="clearfix"></div>
+                                    <img class="shadow" src="GourCar/w.png">
+                                </div>
+
+                                <div class="NumOne">
+                                    <span class="NumSmall leftBorder bottomBorder" id='seven' class='number'>7</span>
+                                    <span class="NumSmall bottomBorder" id='eight' class='number'>8</span>
+                                    <span class="NumSmall bottomBorder" id='nine' class='number'>9</span>
+                                </div>
+                                <div class="NumOne">
+                                    <span class="NumSmall leftBorder bottomBorder" id='four' class='number'>4</span>
+                                    <span class="NumSmall bottomBorder" id='five' class='number'>5</span>
+                                    <span class="NumSmall bottomBorder" id='six' class='number'>6</span>
+                                </div>
+                                <div class="NumOne">
+                                    <span class="NumSmall leftBorder bottomBorder" id='one' class='number'>1</span>
+                                    <span class="NumSmall bottomBorder" id='two' class='number'>2</span>
+                                    <span class="NumSmall bottomBorder" id='three' class='number'>3</span>
+                                </div>
+                                <div class="NumOne">
+                                    <span class="NumSmall leftBorder " id='minus' class='operate'>-</span>
+                                    <span class="NumSmall" id='point' class='number'>.</span>
+                                    <span class="NumSmall" id='zero' class='number'>0</span>
+                                </div>
+                            </div>
+                        </div>
+                       
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel">
+
+            <div class="sale">
+                <div class="saleA">
+                    <ul class="satMenu">
+                        <li class="AtAacitve nonest"><span>当日营业额</span></li>
+                        <li class="nonest"><span>当日热门餐品</span></li>
+                        <li><span>账单查询</span></li>
+                        <li><span>营业统计</span></li>
+                    </ul>
+
+                    <div class="satBottom">
+                        <div class="saleTabel Tabchive">
+
+                            <div class="analytics">
+                                <div class="chart">
+                                    <p>当日营业额</p>
+                                    <p style="font-size: 10px">营业额（元）</p>
+                                    <canvas id="salesHrChart" height="190" width="1727" style="width: 1727px; height: 190px;"></canvas>
+                                    <p style="text-align:center;font-size: 11px">时间段</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="saleTabel">
+
+                            <div class="topItems">
+                                <div class="chart">
+                                    <p>今日还没有任何下单</p>
+                                    <canvas id="popChartInTab"></canvas>
+
+                                    <div class="chartLabels"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="saleTabel">
+
+                            <div class="sewrNum">
+                                <div class="serFirst">
+
+                                   <div class="total pull-left">今日营业额 0.00</div>
+                                    <div class="searchBar input-group input-group-lg pull-right">
+                                        <input type="text" class="form-control" placeholder="账单号">
+                                        <input class="btn btn-default blue-btn search" value="查询" type="button"></input>
+
+                                    </div>
+                                </div>
+                                <div class="serSecond">
+                                    <a href="javascript:;" class="shouwsu">餐桌</a>
+                                    <a href="javascript:;" >账单号</a>
+                                    <a href="javascript:;">下单时间</a>
+                                    <a href="javascript:;">账单金额</a>
+                                    <a href="javascript:;" class="shouwsu">应付</a>
+                                    <a href="javascript:;" class="shouwsu">餐品数量</a>
+                                    <a href="javascript:;" class="shouwsu">退款金额</a>
+                                </div>
+                                <div class="serThird">
+                                    今日还没有任何账单
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="saleTabel">
+                            <div class="AllCount">
+                                <div class="form-group">
+                                    <label class="control-label">开始时间</label>
+                                    <input type="text" id="date" class="form-control">
+                                    <!-- <input type="text" class="form-control time-width hasDatepicker" id="date"> -->
+                                    <select class="form-control hour-width start-hour" name="hour" id="hour">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                    </select>
+                                    <select class="form-control minute-width start-minute" name="minute" id="minute">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                        <option value="32">32</option>
+                                        <option value="33">33</option>
+                                        <option value="34">34</option>
+                                        <option value="35">35</option>
+                                        <option value="36">36</option>
+                                        <option value="37">37</option>
+                                        <option value="38">38</option>
+                                        <option value="39">39</option>
+                                        <option value="40">40</option>
+                                        <option value="41">41</option>
+                                        <option value="42">42</option>
+                                        <option value="43">43</option>
+                                        <option value="44">44</option>
+                                        <option value="45">45</option>
+                                        <option value="46">46</option>
+                                        <option value="47">47</option>
+                                        <option value="48">48</option>
+                                        <option value="49">49</option>
+                                        <option value="50">50</option>
+                                        <option value="51">51</option>
+                                        <option value="52">52</option>
+                                        <option value="53">53</option>
+                                        <option value="54">54</option>
+                                        <option value="55">55</option>
+                                        <option value="56">56</option>
+                                        <option value="57">57</option>
+                                        <option value="58">58</option>
+                                        <option value="59">59</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">结束时间</label>
+                                    <input type="text" id="dates" class="form-control">
+                                    <!-- <input type="text" class="form-control time-width hasDatepicker" id="dp1521362148713" value="2018-3-18"> -->
+                                    <select class="form-control hour-width start-hour" name="hour" id="hour" value="23">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                    </select>
+                                    <select class="form-control minute-width start-minute" name="minute" id="minute" value="55">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                        <option value="32">32</option>
+                                        <option value="33">33</option>
+                                        <option value="34">34</option>
+                                        <option value="35">35</option>
+                                        <option value="36">36</option>
+                                        <option value="37">37</option>
+                                        <option value="38">38</option>
+                                        <option value="39">39</option>
+                                        <option value="40">40</option>
+                                        <option value="41">41</option>
+                                        <option value="42">42</option>
+                                        <option value="43">43</option>
+                                        <option value="44">44</option>
+                                        <option value="45">45</option>
+                                        <option value="46">46</option>
+                                        <option value="47">47</option>
+                                        <option value="48">48</option>
+                                        <option value="49">49</option>
+                                        <option value="50">50</option>
+                                        <option value="51">51</option>
+                                        <option value="52">52</option>
+                                        <option value="53">53</option>
+                                        <option value="54">54</option>
+                                        <option value="55">55</option>
+                                        <option value="56">56</option>
+                                        <option value="57">57</option>
+                                        <option value="58">58</option>
+                                        <option value="59">59</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="btn-group" role="group" aria-label="...">
+
+                                        <button class="btn btn-success btn-lg blue-btn pull-left download">下载数据</button>
+                                        <button class="btn btn-success btn-lg blue-btn email">发送邮件</button>
+
+
+
+                                    </div>
+                                    <!--<p class="downloadExplanation hidden" style="font-size: 15px">服务器正在统计中，60秒后即可再次点击。</p>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/GourCar.js"></script>
+    <script src="js/commons.js"></script>
+</body>
+</html>
+
+
+
